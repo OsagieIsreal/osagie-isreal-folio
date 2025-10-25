@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark theme portfolio design system */
+    --background: 205 50% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 45% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 45% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 210 45% 8%;
+
+    --secondary: 210 45% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 45% 10%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 195 100% 50%;
+    --accent-foreground: 210 45% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 45% 12%;
+    --input: 210 45% 12%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(195 100% 50%), hsl(240 100% 60%));
+    --accent-gradient: linear-gradient(90deg, hsl(195 100% 50%), hsl(240 100% 60%));
+    --card-gradient: linear-gradient(135deg, hsl(210 45% 8%), hsl(210 50% 10%));
+    --glow-primary: 0 0 30px hsl(195 100% 50% / 0.3);
+    --glow-secondary: 0 0 20px hsl(240 100% 60% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter overflow-x-hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom animations */
+  .hero-text {
+    background: var(--hero-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-effect {
+    background: hsl(210 45% 8% / 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(195 100% 50% / 0.2);
+  }
+
+  .glow-effect {
+    box-shadow: var(--glow-primary);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--glow-primary);
+    transform: translateY(-2px);
+  }
+
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .gradient-border {
+    position: relative;
+    background: var(--card-gradient);
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: var(--accent-gradient);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    pointer-events: none;
+  }
+}
