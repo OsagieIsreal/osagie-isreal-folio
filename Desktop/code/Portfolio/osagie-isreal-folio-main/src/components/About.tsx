@@ -7,13 +7,19 @@ const About = () => {
     {
       title: "Senior Secondary School",
       institution: "Government Technical College Ikotun",
-      period: "2021 – 2024",
+      period: "2021 - 2024",
       icon: <GraduationCap className="h-6 w-6" />,
     },
     {
       title: "Junior Secondary School", 
       institution: "Happy Bet College, Ikotun-Igando",
-      period: "Completed",
+      period: "2016-1019",
+      icon: <GraduationCap className="h-6 w-6" />,
+    },
+    {
+      title: "Junior Secondary School", 
+      institution: "Big Heart College, Ikotun-Igando",
+      period: "2020",
       icon: <GraduationCap className="h-6 w-6" />,
     },
   ];
@@ -44,9 +50,9 @@ const About = () => {
             About <span className="hero-text">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I am a dedicated professional with a passion for growth, efficiency, and excellence. 
-            My journey in technology is driven by a desire to create meaningful digital experiences 
-            that make a difference.
+            I am a dedicated and passionate professional, also with a passion for growth, efficiency, 
+            accuracy and excellence. My journey in technology has been driven and still driving by a 
+            desire to create meaningful and impactful digital experiences with a difference in our present world.
           </p>
         </div>
 
@@ -98,9 +104,9 @@ const About = () => {
           <Card className="p-8 max-w-4xl mx-auto gradient-border">
             <h3 className="text-2xl font-bold mb-4 hero-text">My Mission</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To leverage my skills in front-end development and graphic design to create 
-              innovative digital solutions that not only meet client expectations but exceed them. 
-              I believe in the power of clean code, beautiful design, and user-centered experiences 
+              To leverage my skills in front-end development and also in graphic design to create an
+              innovative digital solutions that not only meet client expectations but also supersede them. 
+              I believe in the power of clean and easy to read code, beautiful design, user-friendly and user-centered experiences 
               to transform businesses and connect people.
             </p>
           </Card>

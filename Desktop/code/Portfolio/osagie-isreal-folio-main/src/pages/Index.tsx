@@ -4,9 +4,11 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
+// import ViewCertificate from "@/components/ViewCertificate";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+
 
 const Index = () => {
   return (
@@ -20,6 +22,7 @@ const Index = () => {
       <Services />
       <Contact />
       <Footer />
+      {/* <ViewCertificate /> */}
     </div>
   );
 };

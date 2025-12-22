@@ -44,14 +44,16 @@ const Skills = () => {
   ];
 
   const additionalSkills = [
-    "Responsive Design",
+    "Responsive Designs",
     "Version Control (Git)",
     "Problem Solving",
     "Project Management",
     "Client Communication",
     "Time Management",
+    "Accuracy",
     "Creative Thinking",
-    "Attention to Detail",
+    "Attention to Details",
+    "Adabtability",
   ];
 
   return (

@@ -131,8 +131,8 @@ const Experience = () => {
                 <h3 className="text-2xl font-bold hero-text">Looking Forward</h3>
               </div>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Eager to contribute to innovative projects and collaborate with talented teams. 
-                Seeking opportunities to grow as a developer while making meaningful contributions 
+                Ever ready to contribute to innovative projects and collaborate with talented teams. 
+                Seeking opportunities to grow as a developer while competing with others and making meaningful contributions 
                 to cutting-edge web applications and user experiences.
               </p>
             </Card>

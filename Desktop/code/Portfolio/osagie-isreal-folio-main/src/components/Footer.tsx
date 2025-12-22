@@ -19,7 +19,7 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: <Github className="h-5 w-5" />,
-      href: "#",
+      href: "https://github.com/OsagieIsreal",
       color: "hover:text-gray-400",
     },
     {
@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold hero-text mb-4">Osagie.dev</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Passionate about creating beautiful, functional, and user-friendly 
+              Passionate about creating beautiful, functional, and user-friendly
               digital experiences that make a difference.
             </p>
             <div className="flex gap-4">
@@ -65,6 +65,7 @@ const Footer = () => {
                   href={social.href}
                   className={`p-3 bg-card rounded-lg border border-border hover:border-primary transition-all duration-300 text-muted-foreground ${social.color} hover:scale-110 hover:shadow-lg`}
                   title={social.name}
+                  target="_blank"
                 >
                   {social.icon}
                 </a>
@@ -95,7 +96,7 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="text-muted-foreground">
                 <span className="font-medium">Email:</span><br />
-                <a 
+                <a
                   href="mailto:osagieisreal962@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
@@ -104,7 +105,7 @@ const Footer = () => {
               </p>
               <p className="text-muted-foreground">
                 <span className="font-medium">Phone:</span><br />
-                <a 
+                <a
                   href="tel:+2348063899541"
                   className="hover:text-primary transition-colors"
                 >
@@ -127,7 +128,7 @@ const Footer = () => {
               <Heart className="h-4 w-4 text-red-500 animate-pulse" />
               <span>and modern web technologies.</span>
             </div>
-            
+
             <Button
               variant="outline"
               size="sm"

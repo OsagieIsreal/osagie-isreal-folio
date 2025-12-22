@@ -97,6 +97,7 @@ const Contact = () => {
                 <Card key={index} className="p-6 hover-glow transition-all duration-300 gradient-border group">
                   <a
                     href={contact.link}
+                     target="_blank"
                     className="flex items-center gap-4 text-foreground hover:text-primary transition-colors"
                   >
                     <div className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}>

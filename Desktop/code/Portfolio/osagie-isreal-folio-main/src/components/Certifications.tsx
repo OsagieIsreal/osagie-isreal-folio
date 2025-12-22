@@ -1,8 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Calendar, ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+// import { Certificate } from "crypto";
 
 const Certifications = () => {
+  const navigate = useNavigate()
   const certifications = [
     {
       title: "HTML, CSS, JavaScript Certification",
@@ -19,6 +22,14 @@ const Certifications = () => {
       description: "Official certification recognizing completion of industrial training program with focus on technical skills development and professional practice.",
       skills: ["Technical Training", "Professional Development", "Industry Standards", "Practical Application"],
       credentialId: "NBTE-IT-2023",
+    },
+    {
+      title: "Design Summer Camp Certification",
+      issuer: "Just Design",
+      date: "September 1, 2025",
+      description: "Official certification recognizing completion of the Just Design Summer Camp",
+      skills: ["Technical Training", "Professional Development", "Digital", "Media", "Visual", "Practical Application"],
+      credentialId: "GD9GOC-CE000137",
     },
   ];
 
@@ -44,7 +55,7 @@ const Certifications = () => {
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-6">
-                <div className="flex items-center gap-3">
+                <div  onClick={() => navigate("./Certificate")} className="flex items-center gap-3 cursor-pointer">
                   <div className="p-3 bg-primary/10 rounded-lg">
                     <Award className="h-8 w-8 text-primary" />
                   </div>
@@ -55,7 +66,7 @@ const Certifications = () => {
                     <p className="text-primary font-semibold">{cert.issuer}</p>
                   </div>
                 </div>
-                <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                <ExternalLink className="h-5 w-5 text-muted-foreground cursor-pointer group-hover:text-primary transition-colors" />
               </div>
 
               {/* Date */}

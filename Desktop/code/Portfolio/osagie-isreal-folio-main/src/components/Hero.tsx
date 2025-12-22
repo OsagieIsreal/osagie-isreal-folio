@@ -1,11 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Play, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+// import { toast } from "react-toastify";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
+
+// toast.success(`Welcome Back ${values.username.toUpperCase()}`)
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     setIsVisible(true);
@@ -114,11 +120,17 @@ const Hero = () => {
             {/* Enhanced Role Description */}
             <div className={`space-y-6 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="space-y-2">
-                <div className="flex items-center justify-center lg:justify-start gap-2 text-xl lg:text-2xl font-semibold text-primary">
+                <div className="flex items-center justify-center lg:justify-start gap-2 text-lg lg:text-2xl font-semibold text-primary">
                   <Sparkles className="h-6 w-6" />
                   <span>Front-End Developer</span>
+                  <Sparkles className="h-6 w-6" />
+                  <span>Graphics Designer</span>
+                  <Sparkles className="h-6 w-6" />
+                  <span>Desktop Publisher</span>
                 </div>
-                <p className="text-lg text-accent font-medium">Graphics Designer • Web Development Specialist</p>
+                {/* <div className="text-lg text-accent font-medium">
+                  <Sparkles className="h-6 w-6" /><span>Graphics Designer</span>
+                  </div> */}
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
