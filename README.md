@@ -37,4 +37,4 @@ npm install
 npm run dev
 📬 Contact
 Email: osagieisreal962@gmail.com
-LinkedIn: https://www.linkedin.com/me
+LinkedIn: https://www.linkedin.com/in/osagie-isreal-ba7812359?utm_source=share_via&utm_content=profile&utm_medium=member_android
